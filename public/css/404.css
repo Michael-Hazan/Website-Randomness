@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html{
+	background-color: rgb(102, 102, 102);
+	user-select: none;
+}
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+div.error{
+	padding: 0px;
+	font-size: 300px;
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+div.errorMSG{
+	margin: auto;
+	padding: 0px;
+	font-size: large;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+
+#rcorners {
+	margin: auto;
+  	width: 60%;
+	border-radius: 120px 400px 240px;
+	background: #73AD21;
+	padding: 0px;
+	width: 300px;
+	height: 200px;
+}
