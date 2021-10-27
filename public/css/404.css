@@ -1,39 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-html{
-	background-color: rgb(102, 102, 102);
-	user-select: none;
+html {
+  background-image: url("./imgs/futuristic-city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none;
 }
 .container {
-	position: relative;
-	text-align: center;
-	color: white;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-div.error{
-	padding: 0px;
-	font-size: 300px;
-	font-family: 'Anton', sans-serif;
-	text-align: center;
-	vertical-align: middle;
+div.error {
+  padding: 0px;
+  mix-blend-mode: difference;
+  color: purple;
+  font-size: 300px;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  vertical-align: middle;
 }
-div.errorMSG{
-	margin: auto;
-	padding: 0px;
-	font-size: large;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	text-align: center;
-	vertical-align: middle;
-	
+div.errorMSG {
+  padding: 0px;
+  mix-blend-mode: difference;
+  color: rgb(236, 88, 250);
+  margin-top: -75px;
+  margin-left: -85px;
+  font-size: 45px;
+  width: 700px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 #rcorners {
-	margin: auto;
-  	width: 60%;
-	border-radius: 120px 400px 240px;
-	background: #73AD21;
-	padding: 0px;
-	width: 300px;
-	height: 200px;
+  mix-blend-mode: initial;
+  margin: auto;
+  width: 60%;
+  margin-top: 5%;
+  border-radius: 120px 400px 240px;
+  padding: 0px;
+  width: 300px;
+  height: 200px;
+  background-image: url("./imgs/rainbow-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
