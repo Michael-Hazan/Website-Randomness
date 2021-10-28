@@ -37,7 +37,7 @@ const server = http.createServer((req, res) =>{
 		}
 		else if(fileExt == '.jpg'){
 			res.statusCode = 200;
-			res.setHeader('Content-Type', 'image/jpg');
+			res.setHeader('Content-Type', 'images/jpg');
 			fs.createReadStream(filePath).pipe(res);
 		}
 		else {

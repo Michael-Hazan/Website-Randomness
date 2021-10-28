@@ -63,6 +63,7 @@ html {
 }
 
 div.error {
+  position: fixed;
   filter: blur(0px);
   animation: fadein linear 3.5s;
   padding: 0px;
