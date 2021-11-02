@@ -40,6 +40,11 @@ const server = http.createServer((req, res) =>{
 			res.setHeader('Content-Type', 'images/jpg');
 			fs.createReadStream(filePath).pipe(res);
 		}
+		else if(fileExt == '.js'){
+			res.statusCode = 200;
+			res.setHeader('Content-Type', 'text/js');
+			fs.createReadStream(filePath).pipe(res);
+		}
 		else {
 			filePath = path.resolve('./public/404.html');
 			res.statusCode = 404;

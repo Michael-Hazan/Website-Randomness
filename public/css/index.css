@@ -14,14 +14,37 @@ button.pages-button {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   width: 90px;
-  height: 70px;
-  border-top-color: rgb(53, 124, 255);
-  border-left-color: rgb(30, 109, 255);
-  border-bottom-color: rgb(143, 102, 255);
-  border-right-color: rgb(255, 49, 255);
-  border-radius: 100px 140px 80px;
+  height: 40px;
+  border-width: 0px;
+  border-radius: 120px 140px 120px;
   background-image: url("./imgs/rainbow-sky.jpg");
+  animation: shadow-blurrev 0.5s forwards;
 }
 button.pages-button:not(:last-child) {
   margin-right: 25px;
+}
+button.pages-button:hover {
+  animation: shadow-blur 0.5s forwards;
+  cursor: pointer;
+}
+
+.boxshadow {
+  box-shadow: 0px 0px 5px 2px grey;
+}
+
+@keyframes shadow-blur {
+  0% {
+    box-shadow: 0px 0px 0px unset;
+  }
+  100% {
+    box-shadow: 5px 5px 5px grey;
+  }
+}
+@keyframes shadow-blurrev {
+  0% {
+    box-shadow: 5px 5px 5px grey;
+  }
+  100% {
+    box-shadow: 0px 0px 0px unset;
+  }
 }
