@@ -1,4 +1,50 @@
-html.BlackMode{
-	background-color: rgb(54, 54, 54);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+html.DarkMode {
+  background-color: rgb(54, 54, 54);
+}
+html.LightMode {
+  background-color: rgb(204, 204, 204);
+}
+li.li-pages {
+  display: inline;
 }
 
+button.pages-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  width: 90px;
+  height: 40px;
+  border-width: 0px;
+  border-radius: 120px 140px 120px;
+  background-image: url("./imgs/rainbow-sky.jpg");
+  animation: shadow-blurrev 0.5s forwards;
+}
+button.pages-button:not(:last-child) {
+  margin-right: 25px;
+}
+button.pages-button:hover {
+  animation: shadow-blur 0.5s forwards;
+  cursor: pointer;
+}
+
+.boxshadow {
+  box-shadow: 0px 0px 5px 2px grey;
+}
+
+@keyframes shadow-blur {
+  0% {
+    box-shadow: 0px 0px 0px unset;
+  }
+  100% {
+    box-shadow: 5px 5px 5px grey;
+  }
+}
+@keyframes shadow-blurrev {
+  0% {
+    box-shadow: 5px 5px 5px grey;
+  }
+  100% {
+    box-shadow: 0px 0px 0px unset;
+  }
+}
